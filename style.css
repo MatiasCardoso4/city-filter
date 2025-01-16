@@ -42,6 +42,11 @@ form input[type='text']:focus {
   transform: perspective(100px) rotateX(-7deg) translateY(2px) scale(1.001);
 }
 
+.suggestions li:nth-child(even){
+  transform: perspective(100px) rotateX(7deg) translateY(2px) scale(1.001);
+}
+
+
 form li {
   list-style: none;
   margin-top: 20px;
