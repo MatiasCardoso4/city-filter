@@ -1,5 +1,6 @@
 const suggestions = document.querySelector(".suggestions");
 const input = document.querySelector(".search");
+const form = document.querySelector("form");
 let search = "";
 
 const endpoint =
@@ -29,6 +30,6 @@ suggestions.innerHTML = ''
   });
 
 }
-
+form.addEventListener("submit", (e) => e.preventDefault());
 input.addEventListener("input", (e) => searchCity(e));
 
